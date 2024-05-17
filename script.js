@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const messagesDiv = document.getElementById("messages");
 
     function fetchMessages() {
-        fetch('https://your-repl-url.repl.co/get_messages.php')
+        fetch('https://replit.com/@laiklialuke/ok#get_messages.php')
             .then(response => response.json())
             .then(data => {
                 messagesDiv.innerHTML = "";
@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
         event.preventDefault();
         const text = messageInput.value.trim();
         if (text) {
-            fetch('https://your-repl-url.repl.co/submit_message.php', {
+            fetch('https://replit.com/@laiklialuke/ok#submit_message.php', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Message Board</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #messages {
+            width: 60%;
+            max-width: 600px;
+            margin-top: 20px;
+        }
+        .message {
+            border-bottom: 1px solid #ddd;
+            padding: 10px 0;
+        }
+        .message:last-child {
+            border-bottom: none;
+        }
+        #messageForm {
+            margin-top: 20px;
+            width: 60%;
+            max-width: 600px;
+            display: flex;
+            flex-direction: column;
+        }
+        #messageInput {
+            padding: 10px;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        #submitButton {
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Message Board</h1>
+    <div id="messages"></div>
+    <form id="messageForm">
+        <textarea id="messageInput" rows="4" placeholder="Enter your message..."></textarea>
+        <button type="button" id="submitButton">Submit</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
